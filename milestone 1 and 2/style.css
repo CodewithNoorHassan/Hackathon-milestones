@@ -1,0 +1,100 @@
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f2f5; /* Light grey background */
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+/* Resume Container Styling */
+.resume-container {
+    display: flex;
+    background-color: #ffffff;
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* Left Section Styling */
+.left-section {
+    background-color: #2e3a40; /* Dark teal background */
+    color: #ffffff;
+    padding: 20px;
+    width: 30%;
+    border-right: 4px solid #1abc9c; /* Teal accent */
+    box-sizing: border-box;
+}
+
+.profile-picture {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 4px solid #1abc9c; /* Teal border */
+    margin: 20px auto;
+    display: block;
+}
+
+/* Right Section Styling */
+.right-section {
+    padding: 20px;
+    width: 70%;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 24px;
+    color: #1abc9c; /* Teal heading */
+    text-align: center;
+    margin: 20px 0;
+    border-bottom: 2px solid #1abc9c;
+    padding-bottom: 10px;
+}
+
+h3 {
+    font-size: 18px;
+    color: #ffffff;
+    background-color: #1abc9c; /* Teal background */
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+p {
+    line-height: 1.6;
+    margin: 10px 0;
+}
+
+/* Skills and Experience List Styling */
+ul {
+    list-style-type: disc;
+    padding: 0 20px;
+    margin: 10px 0;
+}
+
+ul li {
+    margin: 5px 0;
+}
+
+/* Button Styling */
+button {
+    font-family: Arial, sans-serif;
+    border-radius: 5px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #1abc9c; /* Teal button background */
+    color: #ffffff;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+button:hover {
+    background-color: #16a085; /* Darker teal on hover */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
