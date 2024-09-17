@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shareable Resume Builder</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Shareable Resume Builder</h1>
+        <form id="resume-Form">
+            <section class="form-section">
+                <h2>Personal Information</h2>
+        
+                <label for="Username">Username:</label>
+                <input type="text" id="Username" name="username" placeholder="Enter your username" required autocomplete="username">
+               
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required autocomplete="name">
+        
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required autocomplete="email">
+        
+                <label for="phone">Phone:</label> <!-- Added phone field -->
+                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required autocomplete="tel">
+        
+                <label for="profilePicture">Profile Picture:</label>
+                <input type="file" id="profilePicture" name="profilePicture" accept="image/*">
+        
+                <label for="profilePictureURL">Or Profile Picture URL:</label>
+                <input type="url" id="profilePictureURL" name="profilePictureURL" placeholder="Enter image URL or leave blank" autocomplete="off">
+            </section>
+        
+            <section class="form-section">
+                <h2>Education</h2>
+                <label for="education">Education:</label>
+                <textarea id="education" name="education" placeholder="List your education here" rows="4" required></textarea>
+            </section>
+        
+            <section class="form-section">
+                <h2>Skills</h2>
+                <label for="skills">Skills:</label>
+                <textarea id="skills" name="skills" placeholder="List your skills here" rows="4" required></textarea>
+            </section>
+        
+            <section class="form-section">
+                <h2>Work Experience</h2>
+                <label for="workExperience">Work Experience:</label>
+                <textarea id="workExperience" name="workExperience" placeholder="List your work experience here" rows="4" required></textarea>
+            </section>
+        
+            <button type="submit"><b>Generate Resume</b></button>
+        </form>
+
+        <!-- Placeholder to display the generated resume -->
+        <div id="resume-display" class="resume-display"></div>
+
+        <!-- Shareable link container -->
+ <div id="shareable-link-container" style="display: none;">
+    <h2>Shareable link</h2>
+    <p>Here is your unique link to view or edit your resume:</p>
+    <a id="shareable-link" href="" target="_blank"></a>
+
+
+ <!-- Button to download as PDF -->
+ <button id="downloadResume">Download PDF</button>
+    <script src="script.js"></script>
+    
+    </div>
+
+</body>
+</html>
